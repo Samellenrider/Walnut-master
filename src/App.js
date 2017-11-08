@@ -7,7 +7,7 @@ const CustomerRow = ({customer}) => (
   <tr>
     <td>{customer.title} {customer.first_name} {customer.last_name}</td>
     <td>{customer.profession}</td>
-    <td>{customer.has_children ? "Y" : "N"}</td>
+    <td>{customer.has_children ? "Yes" : "No"}</td>
     <td>
       {customer.dominant_traits[0].level}
       {customer.dominant_traits[0].primary_trait},
@@ -24,25 +24,24 @@ class App extends Component {
         <header>
           <h1>Walnut</h1>
         </header>
-
-        <table id="topbar">
+        <table>
           <thead>
-            <tr>
+            <tr id="toprow">
               <th>Name</th>
               <th>Profession</th>
               <th>Children</th>
               <th>Traits</th>
             </tr>
           </thead>
-          </table>
-        <div id="list">
-        <table>
-          <tbody id="text">
-          {
-            customers.map(c => <CustomerRow customer={c}/>)
-          }
-          </tbody>
         </table>
+        <div id="list">
+          <table>
+            <tbody id="text">
+              {
+                customers.map(c => <CustomerRow customer={c}/>)
+              }
+            </tbody>
+          </table>
         </div>
       </div>
     );

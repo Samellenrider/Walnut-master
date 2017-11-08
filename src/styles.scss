@@ -7,7 +7,7 @@ $headline: #36486b;
 $line_color: #CCCDCC;
 $table_bg_color: #36486b;
 $table_font_color: #f0f0f0;
-$font_family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$font_family: "Avenir Next"; 
 $font_weight: 100;
 
 #list {
@@ -27,24 +27,33 @@ h1 {
   text-align: center;
 }
 
+th {
+  margin: auto;
+  width: 200px;
+  height: 40px;
+}
+
+/*td {
+  margin: auto;
+  width: 80px;
+  height: 30px;
+
+}*/
+
+
 table {
 	margin: 10px auto;
 	border-radius: 3.5px;
-	/*box-shadow: 10px 10px 5px #303030;*/
-	border: 3px solid $line_color;
+
 
 
 	
   * {
-    border: $line_color 1px;
     border-radius: 3.5px;
     background-color: $table_bg_color;
     color: $table_font_color;
     font-family: $font_family;
     font-weight: lighter;
-
-    /*height: 600px;*/
-    /*overflow: auto;*/
   }
 }
 
