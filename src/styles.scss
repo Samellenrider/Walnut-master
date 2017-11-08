@@ -1,0 +1,35 @@
+.app {
+  font-size: 1.2em;
+  background-color: #f7cac9;
+}
+
+$headline: #36486b;
+$line_color: #CCCDCC;
+$table_bg_color: #36486b;
+$table_font_color: #f0f0f0;
+$font_family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$font_weight: 100;
+
+
+
+h1 {
+  color: $headline;
+  font-family: $font_family;
+  font-weight: $font_weight;
+  text-align: center;
+}
+
+table {
+	margin: 10px auto;
+	
+  * {
+    border: $line_color 1px;
+    background-color: $table_bg_color;
+    color: $table_font_color;
+    font-family: $font_family;
+    font-weight: $font_weight;
+    /*width: 800px;
+    height: 600px;*/
+    /*overflow: auto;*/
+  }
+}
