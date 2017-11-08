@@ -22,6 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+      <div id="list">
         <header>
           <h1>Walnut</h1>
         </header>
@@ -40,6 +41,7 @@ class App extends Component {
           }
           </tbody>
         </table>
+        </div>
       </div>
     );
   }

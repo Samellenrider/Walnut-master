@@ -10,6 +10,11 @@ $table_font_color: #f0f0f0;
 $font_family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 $font_weight: 100;
 
+#list {
+	height: 600px;
+	width: 800px;
+	overflow: scroll;
+}
 
 
 h1 {
@@ -21,15 +26,22 @@ h1 {
 
 table {
 	margin: 10px auto;
+	border-radius: 3.5px;
+	box-shadow: 10px 10px 5px #303030;
+	border: 3px solid $line_color;
+
+
 	
   * {
     border: $line_color 1px;
+    border-radius: 3.5px;
     background-color: $table_bg_color;
     color: $table_font_color;
     font-family: $font_family;
     font-weight: $font_weight;
-    /*width: 800px;
-    height: 600px;*/
+
+    /*height: 600px;*/
     /*overflow: auto;*/
   }
 }
+
