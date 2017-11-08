@@ -43,6 +43,12 @@ class App extends Component {
             </tbody>
           </table>
         </div>
+        <div>
+        <br>
+        </br>
+        <br>
+        </br>
+        </div>
       </div>
     );
   }
