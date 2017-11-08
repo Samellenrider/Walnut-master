@@ -1,23 +1,16 @@
 .app {
-  font-size: 1.2em;
-  background-color: #f7cac9;
+	height: 100vh;
+  	font-size: 1.2em;
+  	/*background-color: #f7cac9;*/
+  	background: linear-gradient(to left, #f7cac9, white);
 }
 
-$headline: #36486b;
+$headline: #37474F;
 $line_color: #CCCDCC;
-$table_bg_color: #36486b;
+$table_bg_color: #37474F;
 $table_font_color: #f0f0f0;
 $font_family: "Avenir Next"; 
 $font_weight: 100;
-
-#list {
-	height: 600px;
-	width: 800px;
-	overflow: scroll;
-	margin: auto;
-	text-align: center;
-	align-self: center;
-}
 
 
 h1 {
@@ -25,6 +18,17 @@ h1 {
   font-family: $font_family;
   font-weight: $font_weight;
   text-align: center;
+  margin: 0;
+}
+
+#list {
+  height: 600px;
+  overflow: scroll;
+}
+
+#container {
+  width: 800px;
+  margin: 0 auto;
 }
 
 th {
@@ -33,20 +37,21 @@ th {
   height: 40px;
 }
 
-/*td {
-  margin: auto;
-  width: 80px;
-  height: 30px;
+td {
+  width: 200px;
+  overflow: hidden;
+  max-width: 200px;
+  text-align: center;
+}
 
-}*/
+.traits {
+  display: grid;
+}
 
 
 table {
 	margin: 10px auto;
 	border-radius: 3.5px;
-
-
-
 	
   * {
     border-radius: 3.5px;
