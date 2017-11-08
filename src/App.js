@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { AppRegistry, ScrollView, Image, Text } from 'react';
 import ReactScrollTable from 'react-scroll-table';
 import customers from './customers.json';
 import './styles.scss';
@@ -22,11 +21,11 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-      <div id="list">
         <header>
           <h1>Walnut</h1>
         </header>
-        <table>
+
+        <table id="topbar">
           <thead>
             <tr>
               <th>Name</th>
@@ -35,7 +34,10 @@ class App extends Component {
               <th>Traits</th>
             </tr>
           </thead>
-          <tbody>
+          </table>
+        <div id="list">
+        <table>
+          <tbody id="text">
           {
             customers.map(c => <CustomerRow customer={c}/>)
           }
