@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ReactScrollTable from 'react-scroll-table';
 import customers from './customers.json';
 import './styles.scss';
+
 
 const CustomerRow = ({customer}) => (
   <tr>
@@ -25,9 +25,9 @@ class App extends Component {
           <h1>Walnut</h1>
         </header>
         <div id="container">
-        <table>
+        <table class="topRow">
           <thead>
-            <tr id="toprow">
+            <tr>
               <th>Name</th>
               <th>Profession</th>
               <th>Children</th>
@@ -36,8 +36,8 @@ class App extends Component {
           </thead>
         </table>
         <div id="list">
-          <table>
-            <tbody id="text">
+          <table class="table">
+            <tbody>
               {
                 customers.map(c => <CustomerRow customer={c}/>)
               }
